@@ -1,0 +1,9 @@
+<div class="contents row">
+  <% @tweets.each do |tweet| %>
+    <%= render partial: "tweet", locals: { tweet: tweet } %> 
+    <!--renderメソッドは、部分テンプレート(_tweet.html.erb)を呼び出す際に利用するメソッド-->
+    <!--localsというオプションを用いると部分テンプレート内でその変数を使えるようになる-->
+    <!--テンプレートファイルのファイル名の頭には"アンダーバー"をつける-->
+  <% end %>
+  <%= paginate(@tweets) %>
+</div>

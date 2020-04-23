@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+p {
+  width: 660px;
+  margin: 30px auto 0;
+  line-height: 26px;
+}
+
+header{
+  background-color: #4f4f4f;
+  height: 80px;
+  width: 100%;
+  /*位置固定  */
+  position: fixed;
+}
+
+.contents{
+  width: 960px;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 80px 0 0 0;
+}
+
+.top-content{
+  /*文字数が少なくてもレイアウトが崩れないようにするため*/
+  min-height: 300px;
+  background-color: #1e965c;
+}
+
+.top-content p{
+  color: #fff;
+  /*背景色があって欲しいので、paddingを使う*/
+  padding: 0 0 30px 0;
+}
+
+.bottom-content{
+  height: 300px;
+  background-color: #ddd1c1;
+}
+
+footer{
+  height: 60px;
+  background-color: #333;
+}
